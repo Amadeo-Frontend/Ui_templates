@@ -1,0 +1,42 @@
+.card {
+    border: 1px solid #444;
+    /* Bordas cinzas */
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    background-color: #222;
+    /* Fundo do card escuro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.2);
+    /* Efeito de luz ao passar o mouse */
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.card-content {
+    padding: 8px;
+    color: #ccc;
+}
+
+.card-title {
+    margin-top: 10px;
+    /* Espaçamento acima do título */
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.card-description {
+    margin: 0;
+    font-size: 0.9em;
+}
