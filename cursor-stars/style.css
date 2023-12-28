@@ -1,0 +1,32 @@
+body {
+    background-color: #111;
+    color: aliceblue;
+}
+
+.star {
+    transform-style: preserve-3d;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    color: red;
+    opacity: 0;
+    /* Inicialmente invisível */
+    transition: opacity 0.6s ease-out;
+    /* Transição suave para desaparecer */
+}
+
+.star::before {
+    position: absolute;
+    content: "\2605";
+    /* Código Unicode para uma estrela */
+    color: inherit;
+    inset: 0;
+    text-shadow: 0 0 0.8em #fff5;
+}
+
+#toggle-stars {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
